@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <TextView
+            android:id="@+id/module_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:maxLines="1"
+            />
+
+    <LinearLayout
+        android:id="@+id/line_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+        android:visibility="gone">
+
+        <com.example.sunyawang.uidemo.CollectionMovieItem
+            android:id="@+id/movieitem_0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="16dp"/>
+
+        <com.example.sunyawang.uidemo.CollectionMovieItem
+            android:id="@+id/movieitem_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="19dp"
+        android:weightSum="1.0"
+        android:visibility="gone">
+
+        <com.example.sunyawang.uidemo.CollectionMovieItem
+            android:id="@+id/movieitem_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="16dp"/>
+
+        <com.example.sunyawang.uidemo.CollectionMovieItem
+            android:id="@+id/movieitem_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
